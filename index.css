@@ -14,7 +14,7 @@ header {
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    height: 156px;
+    height: 80px;
 }
 
 .logo a {
@@ -57,13 +57,13 @@ nav ul li a:hover {
 }
 
 .main {
-    width: 100%;
+    width: 80%;
 }
 
 .hero {
-    height: 80vh;
+    height: 40vh;
     background-image: url('images/stock-images/menu-img.jpg');
-    background-size: cover;
+    background-size: 100% 50em;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -79,13 +79,13 @@ nav ul li a:hover {
 }
 
 .overlay img {
-    height: 350px;
-    width: 350px;
+    height: 150px;
+    width: 150px;
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
 }
 
 .overlay h2 {
-    font-size: 64px;
+    font-size: 35px;
     text-shadow: 0 0 0.1em rgba(0, 0, 0, 1);
 }
 
@@ -100,7 +100,7 @@ nav ul li a:hover {
 .welcome-message {
     text-align: center;
     width: 880px;
-    margin: 70px auto;
+    margin: 35px auto;
 }
 
 .welcome-message span {
