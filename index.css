@@ -61,7 +61,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    height: 120vh;
+    height: 80vh;
     background-image: url('images/stock-images/menu-img.jpg');
     background-size: cover;
     background-position: center;
@@ -124,10 +124,10 @@ nav ul li a:hover {
 }
 
 .index-img {
-    height: 100vh;
+    height: 80vh;
     background-image: url('images/stock-images/att.9TGX2TLhnMhLffEH8ZB6d3l0sckgo9TU6D8h4pmh_1s (1).jpg');
     background-size: cover;
-    background-position: center;
+    background-position: 25% 75%;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
