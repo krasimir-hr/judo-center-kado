@@ -195,7 +195,7 @@ footer {
 
 .footer-info a i {
     color: #fff;
-    text-decoration: none; 
+    text-decoration: none;
     font-size: 30px;
 }
 
@@ -203,3 +203,10 @@ footer {
     color: #0866ff;
 }
 
+
+
+.glide__slide img {
+    width: 100%;
+    height: 40em;
+    object-fit: cover;
+}
