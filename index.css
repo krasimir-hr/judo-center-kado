@@ -11,7 +11,7 @@ body {
 header {
     display: flex;
     width: 1120px;
-    margin: 0 auto;
+    margin: 1em auto;
     justify-content: space-between;
     align-items: center;
     height: 80px;
@@ -207,6 +207,12 @@ footer {
 
 .glide__slide img {
     width: 100%;
-    height: 40em;
+    height: 50vh;
     object-fit: cover;
+}
+
+@media (min-width: 1600px) {
+    .glide__slide img {
+        height: 60vh;
+    }
 }

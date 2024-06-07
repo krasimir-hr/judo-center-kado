@@ -5,7 +5,7 @@ const config = {
     animationDuration: 1000,
     animationTimingFunc: 'ease-in-out',
     perView: 1,
-    peek: 300,
+    peek: 450,
 }
 
 
