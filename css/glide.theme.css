@@ -25,11 +25,11 @@
 }
 .glide__arrow--left {
   left: 2em;
-  top: -20em;
+  top: -14em;
 }
 .glide__arrow--right {
   right: 2em;
-  top: -20em;
+  top: -14em;
 }
 .glide__arrow--disabled {
   opacity: 0.33;
@@ -78,3 +78,14 @@
 }
 
 /*# sourceMappingURL=glide.theme.css.map */
+
+@media (min-width: 1600px) {
+  .glide__arrow--left {
+    left: 2em;
+    top: -20em;
+  }
+  .glide__arrow--right {
+    right: 2em;
+    top: -20em;
+  }
+}
