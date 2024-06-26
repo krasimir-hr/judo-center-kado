@@ -6,6 +6,7 @@ const config = {
     animationTimingFunc: 'ease-in-out',
     perView: 1,
     peek: 450,
+    gap: 1,
 }
 
 
