@@ -217,8 +217,9 @@ footer {
 .glide__slide img {
     width: 100%;
     object-fit: cover;
-    height: 70vh;
+    height: 100vh;
     filter: grayscale(100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
 .bottom-image img {
@@ -237,8 +238,3 @@ footer {
     z-index: 0;
 }
 
-@media (min-width: 1600px) {
-    .glide__slide img {
-        height: 60vh;
-    }
-}
