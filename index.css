@@ -243,5 +243,6 @@ footer {
     object-fit: cover;
     height: 100vh;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    object-position: bottom right;
 }
 
