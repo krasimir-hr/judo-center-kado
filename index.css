@@ -148,7 +148,7 @@ nav ul li a:hover {
 .contacts {
     display: flex;
     width: 900px;
-    margin: 160px auto;
+    margin: 140px auto;
     justify-content: space-between;
 }
 
