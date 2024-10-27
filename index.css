@@ -148,7 +148,8 @@ nav ul li a:hover {
 .contacts {
     display: flex;
     width: 900px;
-    margin: 140px auto;
+    margin: 20px auto;
+    margin-bottom: 40px;
     justify-content: space-between;
 }
 
@@ -187,16 +188,17 @@ footer {
     justify-content: space-between;
     width: 1120px;
     margin: 0 auto;
+    align-items: center;
 }
 
 .footer-info p {
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .footer-info a i {
     color: #fff;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 40px;
 }
 
 .fa-facebook:hover {
@@ -209,8 +211,12 @@ footer {
 
 .footer-info div {
     display: flex;
-    width: 50px;
+    width: 90px;
     justify-content: space-between;
+}
+
+.footer-info div p {
+    font-size: 40px;
 }
 
 
