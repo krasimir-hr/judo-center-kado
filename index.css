@@ -55,7 +55,7 @@ nav ul {
    text-transform: uppercase;
    display: flex;
    justify-content: space-between;
-   gap: 15px;
+   gap: 40px;
    list-style-type: none;
    font-size: 17px;
 }
