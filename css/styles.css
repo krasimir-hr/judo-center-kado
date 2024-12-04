@@ -282,8 +282,8 @@ footer {
 
    .mobile-menu-container {
       position: fixed;
-      height: 100vh;
-      width: 93vw;
+      height: 100%;
+      width: 93%;
       right: 0;
       bottom: 0;
       background-color: #000000;
