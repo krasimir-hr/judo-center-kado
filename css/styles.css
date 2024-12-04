@@ -14,6 +14,7 @@ body {
    font-family: 'Bookman Old Style', Georgia, serif;
    background-color: #eeeae9;
    min-height: 100vh;
+   background-color: #000;
 }
 
 header {
