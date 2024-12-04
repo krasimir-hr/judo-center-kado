@@ -7,9 +7,13 @@ function openMenu() {
 
 function closeMenu() {
   const mobileMenu = document.querySelector('.mobile-menu-container');
+
+  if (mobileMenu.classList.contains('open')) {
+    toggleScroll();
+    toggleScreenDiming();
+  }
+
   mobileMenu.classList.remove('open');
-  toggleScroll();
-  toggleScreenDiming();
 }
 
 function toggleScroll() {
@@ -28,7 +32,7 @@ function carousel(track, links) {
 
     document.querySelector('a.active')?.classList.remove('active');
     links[index].classList.add('active');
-    closeMenu();
+    closeMenu()
   };
 
   links.forEach((link, index) => {
