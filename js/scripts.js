@@ -1,11 +1,58 @@
 function openMenu() {
   const mobileMenu = document.querySelector('.mobile-menu-container');
   mobileMenu.classList.add('open');
+  toggleScroll();
+  toggleScreenDiming();
 }
 
 function closeMenu() {
   const mobileMenu = document.querySelector('.mobile-menu-container');
   mobileMenu.classList.remove('open');
+  toggleScroll();
+  toggleScreenDiming();
+}
+
+function toggleScroll() {
+  const body = document.body;
+  body.classList.toggle('no-scroll')
+}
+
+function toggleScreenDiming() {
+  const dimOverlay = document.querySelector('.dim-overlay');
+  dimOverlay.classList.toggle('dimmed')
+}
+
+function carousel(track, links) {
+  const moveToSlide = (index) => {
+    track.style.transform = `translateX(-${100 * index}%)`;
+
+    document.querySelector('a.active')?.classList.remove('active');
+    links[index].classList.add('active');
+    closeMenu();
+  };
+
+  links.forEach((link, index) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault(); // Prevent default anchor behavior
+      moveToSlide(index);
+    });
+  })
+
+  links[0].classList.add('active');
+}
+
+function desktopCarousel() {
+  const track = document.querySelector('.carousel-track');
+  const desktopLinks = document.querySelectorAll('.desktop-carousel-selector');
+
+  carousel(track, desktopLinks)
+}
+
+function mobileCarousel() {
+  const track = document.querySelector('.carousel-track');
+  const mobileLinks = document.querySelectorAll('.mobile-carousel-selector');
+  
+  carousel(track, mobileLinks)
 }
 
 
@@ -13,31 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.mobile-menu-open').addEventListener('click', openMenu);
     document.querySelector('.mobile-menu-close').addEventListener('click', closeMenu);
 
-    const track = document.querySelector('.carousel-track');
-    const slides = Array.from(track.children);
-
-    if (!track) {
-        console.error('Carousel track not found!')
-    }
-    const navLinks = document.querySelectorAll('.desktop-carousel-selector');
-  
-    const moveToSlide = (index) => {
-      track.style.transform = `translateX(-${100 * index}%)`;
-  
-      // Update active navigation link
-      document.querySelector('nav ul li a.active  ')?.classList.remove('active');
-      navLinks[index].classList.add('active');
-    };
-  
-    // Add event listeners to navigation links
-    navLinks.forEach((link, index) => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault(); // Prevent default anchor behavior
-        moveToSlide(index);
-      });
-    });
-  
-    // Set the first slide as active by default
-    navLinks[0].classList.add('active');
+    desktopCarousel();
+    mobileCarousel();
   });
   
