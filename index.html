@@ -7,6 +7,9 @@
 
       <link rel="stylesheet" href="css/styles.css" />
       <link rel="icon" type="image/x-icon" href="images/logo-filled.png" />
+
+      <link rel="preload" href="images/carrousel/index-image.png" />
+      <link rel="preload" href="images/index-image-vertical.jpg" />
    </head>
    <body>
       <header>
@@ -20,10 +23,16 @@
          <nav class="desktop-menu">
             <ul>
                <li><a class="desktop-carousel-selector" href="#">За клуба</a></li>
-               <li><a class="desktop-carousel-selector" href="#">Джудо за деца</a></li>
-               <li><a class="desktop-carousel-selector" href="#">Джудо за любители</a></li>
-               <li><a class="desktop-carousel-selector" href="#">Джудо за самоотбрана</a></li>
-               <li><a class="desktop-carousel-selector" href="#">Нашите шампиони</a></li>
+               <li class="dropdown">
+                  <a class="dropdown-link" href="#">Джудо <i class="fa-solid fa-chevron-down"></i></a>
+                  <div class="dropdown-content">
+                     <a class="desktop-carousel-selector" href="#">За деца</a>
+                     <a class="desktop-carousel-selector" href="#">За любители</a>
+                     <a class="desktop-carousel-selector" href="#">За състезатели и напреднали</a>
+                     <a class="desktop-carousel-selector" href="#">За самоотбрана</a>
+                  </div>
+               </li>
+               <li><a class="desktop-carousel-selector" href="#">Галерия</a></li>
                <li><a class="desktop-carousel-selector" href="#">График</a></li>
                <li><a class="desktop-carousel-selector" href="#">Контакти</a></li>
             </ul>
@@ -54,26 +63,181 @@
          <div class="carousel-container">
             <div class="carousel-track">
                <section class="carousel-slide">
-                  <img class="carousel-image" src="images/carrousel/index-image.png" alt="">
+                  <img class="carousel-image index-image-wide" src="images/carrousel/index-image.png" alt="" />
+                  <img
+                     class="carousel-image index-image-vertical"
+                     src="images/carrousel/index-image-vertical.png"
+                     alt=""
+                  />
                </section>
                <section class="carousel-slide">
-                  <img class="carousel-image" src="images/carrousel/club-info.jpg" alt="">
+                  <img class="carousel-image" src="images/carrousel/club-info.jpg" alt="" />
+                  <div class="carousel-main">
+                     <h2 class="carousel-header">За клуба</h2>
+                     <p>
+                        Джудо Център Кано е първата детска школа в град Варна, основана през 2010 година от Сенсей
+                        Дехгхани - дипломиран в КОДОКАН, Япония с над 45 години опит състезателна и треньорска дейност.
+                     </p>
+                     <p>
+                        Школата има дългогодишна история и много практика в работата с деца, възрастни и хора в
+                        неравностойно положение, като през годините е създала много шампиони в местни, и международни
+                        турнири. Клубът е лицензиран от Министерството на младежта и спорта, и Българската федерация по
+                        джудо.
+                     </p>
+                     <p>
+                        Джудо Център Кано разполага с нова база в модерна сграда Клас А. Занятията се провеждат в добре
+                        оборудвана зала със собствена климатизация на професионална джудо настилка - татами..
+                     </p>
+                     <div class="button-container">
+                        <a href="#" class="schedule btn">ГРАФИК НА ЗАНЯТИЯТА</a>
+                     </div>
+                  </div>
                </section>
                <section class="carousel-slide">
-                  <img class="carousel-image" src="images/carrousel/judo-for-kids.jpg" alt="">
+                  <img class="carousel-image" src="images/carrousel/judo-for-kids.jpg" alt="" />
+                  <div class="carousel-main">
+                     <h2 class="carousel-header">Джудо за деца</h2>
+                     <p>
+                        Заради своята същност, японска философия и дисциплина, и като единственото бойно изкуство без
+                        удари, джудо не е само спорт. Джудо е начин на живот, който оформя личности и занятията за деца
+                        стават все по-търсени, и предпочитани от родителите по цял свят.
+                     </p>
+                     <p class="bolded">Джудо учи на дисциплина, уважение и постоянство!</p>
+                     <p>
+                        Гордеем се, че имаме опита от практиката да обучаваме деца в различни възрастови групи след
+                        навършване на 5 годишна възраст. Графикът на занятията може да видите <a href="#">тук</a>.
+                     </p>
+                     <div class="button-container">
+                        <a href="#" class="schedule btn">ГРАФИК НА ЗАНЯТИЯТА</a>
+                     </div>
+                  </div>
                </section>
                <section class="carousel-slide">
-                  <img class="carousel-image" src="images/carrousel/judo-for-enthusiasts.jpg" alt="">
+                  <img class="carousel-image" src="images/carrousel/judo-for-enthusiasts.jpg" alt="" />
+                  <div class="carousel-main">
+                     <h2 class="carousel-header">Джудо за любители</h2>
+                     <p>
+                        В нашия спорт няма ограничения за пол и възраст, което го прави уникален, търсен и уважаван от милиони хора по света. Всеки, който желае да практикува джудо за лично усъвършенстване и придобиване на знания да се чувства поканен. 
+                     </p>
+                     <div class="button-container">
+                        <a href="#" class="schedule btn">ГРАФИК НА ЗАНЯТИЯТА</a>
+                     </div>
+                  </div>
                </section>
                <section class="carousel-slide">
-                  <img class="carousel-image" src="images/stock-images/pexels-artempodrez-6253307.jpg" alt="">
+                  <img class="carousel-image" src="images/stock-images/pexels-artempodrez-6253307.jpg" alt="" />
+                  <div class="carousel-main">
+                     <h2 class="carousel-header">Джудо за състезатели и напреднали</h2>
+                     <p>
+                        Джудо Център Кано предлага обучение, подготовка и сертифициране на състезатели и напреднали, съобразено с правилата на Международната джудо федерация – IJF и програми на Кодокан, Япония.
+                     </p>
+                     <p>
+                        Всеки желаещ да продължи обучението си е добре дошъл да ни посети на място в някой от работните дни на Центъра. 
+                     </p>
+                     <div class="button-container">
+                        <a href="#" class="schedule btn">ГРАФИК НА ЗАНЯТИЯТА</a>
+                     </div>
+                  </div>
                </section>
                <section class="carousel-slide">
-                  <img class="carousel-image" src="images/carrousel/judo-for-kids.jpg" alt="">
+                  <img class="carousel-image" src="images/carrousel/judo-for-kids.jpg" alt="" />
+                  <div class="carousel-main">
+                     <h2 class="carousel-header">Джудо за самоотбрана</h2>
+                     <p>
+                        Джудо Център Кано предлага индивидуални и групови  занятия. Обучението по самоотбрана се извършва по системата на Кодокан Гошин Джуцу.
+                     </p>
+                     <p>
+                        Можете да заявите Вашето желание на нашата електронна поща.
+                     </p>
+                     <div class="button-container">
+                        <a href="#" class="email btn">СВЪРЖЕТЕ СЕ С НАС</a>
+                     </div>
+                  </div>
+               </section>
+               <section class="carousel-slide">
+                  <img class="carousel-image" src="images/carrousel/judo-for-kids.jpg" alt="" />
+                  <div class="carousel-main">
+                     <h2 class="carousel-header">Галерия</h2>
+                  </div>
+               </section>
+               <section class="carousel-slide">
+                  <img class="carousel-image" src="images/carrousel/judo-for-kids.jpg" alt="" />
+                  <div class="carousel-main">
+                     <h2 class="carousel-header">График</h2>
+                     <div class="carousel-main">
+                        <div class="schedule-container">
+                           <div class="day">Понеделник</div>
+                           <div class="class">
+                              <p class="class--time">17:00 - 18:30</p>
+                              <p class="class--info">За деца</p>
+                           </div>
+                           <div class="day">Вторник</div>
+                           <div class="class">
+                              <p class="class--time">19:00 - 20:30</p>
+                              <p class="class--info">За напреднали и любители</p>
+                           </div>
+                           <div class="day">Сряда</div>
+                           <div class="class">
+                              <p class="class--time">17:00 - 18:30</p>
+                              <p class="class--info">За деца</p>
+                           </div>
+                           <div class="day">Четвъртък</div>
+                           <div class="class">
+                              <p class="class--time">19:00 - 20:30</p>
+                              <p class="class--info">За напреднали и любители</p>
+                           </div>
+                           <div class="day">Петък</div>
+                           <div class="class">
+                              <p class="class--time">17:00 - 18:30</p>
+                              <p class="class--info">За деца</p>
+                           </div>
+                           <div class="day">Събота</div>
+                           <div class="class">
+                              <p class="class--time">10:00 - 11:30</p>
+                              <p class="class--info">За напреднали и любители</p>
+                           </div>
+                           <div class="day">Неделя</div>
+                           <div class="class">
+                              <p class="class--info">Почивен ден</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="carousel-slide">
+                  <img class="carousel-image" src="images/carrousel/judo-for-kids.jpg" alt="" />
+                  <div class="carousel-main">
+                     <h2 class="carousel-header">Контакти</h2>
+                     <div class="contacts">
+                        <div class="contact">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-phone"></i>
+                                <p>ТЕЛЕФОН</p>
+                            </div>
+                            <p class="contact-text phone">087 813 4005</p>
+                        </div>
+                        <div class="contact">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-house"></i>
+                                <p>АДРЕС</p>
+                            </div>
+                            <p class="contact-text">ул. Тролейна №12</p>
+                        </div>
+                        <div class="contact">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>EMAIL</p>
+                            </div>
+                            <p class="contact-text">centerkano@gmail.com</p>
+                        </div>
+                     </div>
+                     <div class="map">
+                        
+                     </div>
+                  </div>
                </section>
             </div>
          </div>
-
       </main>
       <footer>
          <div class="footer-info">
@@ -84,7 +248,7 @@
             </div>
          </div>
       </footer>
-
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6tO_YXbuB3v-Xa-eRErlC1S-xEvuXDZ8&v=beta&libraries=marker&&loading=async&callback=initMap" async defer></script>
       <script src="https://kit.fontawesome.com/2c665bbf8a.js" crossorigin="anonymous"></script>
       <script src="js/scripts.js"></script>
    </body>
