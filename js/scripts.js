@@ -43,6 +43,14 @@ function carousel(track, links) {
    });
 
    links[0].classList.add('active');
+
+   const scheduleBtns = document.querySelectorAll('.schedule.btn');
+   scheduleBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+         const slideIndex = 7;
+         moveToSlide(slideIndex)
+      })
+   })
 }
 
 function desktopCarousel() {
