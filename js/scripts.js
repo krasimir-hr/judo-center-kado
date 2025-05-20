@@ -47,7 +47,7 @@ function carousel(track, links) {
    const scheduleBtns = document.querySelectorAll('.schedule.btn');
    scheduleBtns.forEach(btn => {
       btn.addEventListener('click', () => {
-         const slideIndex = 7;
+         const slideIndex = 6;
          moveToSlide(slideIndex)
       })
    })

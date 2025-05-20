@@ -203,7 +203,7 @@ footer {
 .carousel-image {
    object-fit: cover;
    width: 100%;
-   height: 30vh;
+   height: 50vh;
    object-position: 50% 50%;
    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
    transition: height 0.5s ease-in-out;
