@@ -45,12 +45,12 @@ function carousel(track, links) {
    links[0].classList.add('active');
 
    const scheduleBtns = document.querySelectorAll('.schedule.btn');
-   scheduleBtns.forEach(btn => {
+   scheduleBtns.forEach((btn) => {
       btn.addEventListener('click', () => {
-         const slideIndex = 6;
-         moveToSlide(slideIndex)
-      })
-   })
+         const slideIndex = 5;
+         moveToSlide(slideIndex);
+      });
+   });
 }
 
 function desktopCarousel() {
@@ -79,20 +79,19 @@ function dropdownClose() {
 
 function initMap() {
    console.log('Initializing Map...');
-   
-   const location = { lat: 43.22799581130199, lng: 27.868030839950993};
+
+   const location = { lat: 43.22799581130199, lng: 27.868030839950993 };
    const map = new google.maps.Map(document.querySelector('.map'), {
       zoom: 17,
       center: location,
-      mapId: '6ef82e48884717fb'
+      mapId: '6ef82e48884717fb',
    });
 
    const marker = new google.maps.marker.AdvancedMarkerElement({
       position: location,
       map: map,
-      title: "Judo Center Kano",
+      title: 'Judo Center Kano',
    });
-   
 }
 
 document.addEventListener('DOMContentLoaded', () => {
