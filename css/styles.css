@@ -368,6 +368,10 @@ footer {
    border-radius: 4px;
 }
 
+.phone {
+   color: #000;
+}
+
 @media (max-width: 393px) {
    .class .class--info {
       font-size: 16px ;
