@@ -73,7 +73,8 @@ nav ul {
    font-size: 17px;
 }
 
-.desktop-carousel-selector, .dropdown-link {
+.desktop-carousel-selector,
+.dropdown-link {
    text-decoration: none;
    color: #fff;
    font-weight: bold;
@@ -221,7 +222,8 @@ footer {
    display: none;
 }
 
-.index-image-wide, .index-image-vertical {
+.index-image-wide,
+.index-image-vertical {
    height: 100vh;
 }
 
@@ -297,13 +299,13 @@ footer {
 .dropdown-link {
    display: flex;
    align-items: center;
-   gap: 5px
+   gap: 5px;
 }
 
 .schedule-container {
    display: grid;
    grid-template-columns: 1fr 3fr; /* Two columns: one for days, one for classes */
-   grid-template-rows: repeat(7, auto); 
+   grid-template-rows: repeat(7, auto);
    text-align: center;
    align-items: center; /* Vertically align content */
 }
@@ -345,7 +347,7 @@ footer {
    margin: 0 auto;
    width: 100%;
    height: 500px;
-   border: 1px solid #ccc
+   border: 1px solid #ccc;
 }
 
 .button-container {
@@ -365,6 +367,38 @@ footer {
    letter-spacing: 2.63px;
    border-radius: 4px;
 }
+
+@media (max-width: 393px) {
+   .class .class--info {
+      font-size: 16px ;
+   }
+
+   .class .class--time {
+      font-size: 18px;
+   }
+}
+
+
+@media (max-width: 360px) {
+   .class .class--info {
+      font-size: 15px ;
+   }
+
+   .class .class--time {
+      font-size: 17px ;
+   }
+}
+
+@media (max-width: 343px) {
+   .class .class--info {
+      font-size: 13px ;
+   }
+
+   .class .class--time {
+      font-size: 15px ;
+   }
+}
+
 
 @media (max-width: 500px) {
    .desktop-menu {
@@ -433,7 +467,7 @@ footer {
    }
 
    .contact {
-      width: 100%
+      width: 100%;
    }
 
    .mobile-menu-container {
@@ -516,7 +550,7 @@ footer {
 
    .carousel-main {
       max-width: 80vw;
-      font-size: 21px
+      font-size: 21px;
    }
 
    .map {
