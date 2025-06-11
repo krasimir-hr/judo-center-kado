@@ -389,13 +389,23 @@ footer {
    }
 }
 
-@media (max-width: 343px) {
+@media (max-width: 353px) {
    .class .class--info {
       font-size: 13px ;
    }
 
    .class .class--time {
       font-size: 15px ;
+   }
+}
+
+@media (max-width: 337px) {
+   .class .class--info {
+      font-size: 12px ;
+   }
+
+   .class .class--time {
+      font-size: 14px ;
    }
 }
 
