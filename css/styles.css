@@ -411,6 +411,36 @@ a[href^='tel'] {
    text-align: center;
 }
 
+.lang-switcher {
+   display: flex;
+   gap: 5px;
+   align-items: center;
+   z-index: 2;
+}
+
+.lang-btn {
+   background: transparent;
+   color: #fff;
+   border: 1px solid rgba(255, 255, 255, 0.5);
+   padding: 4px 10px;
+   cursor: pointer;
+   font-family: 'Bergen-Bold', sans-serif;
+   font-size: 13px;
+   letter-spacing: 1px;
+   border-radius: 3px;
+   transition: all 0.2s ease;
+}
+
+.lang-btn:hover {
+   background: rgba(255, 255, 255, 0.15);
+}
+
+.lang-btn.active {
+   background: #bc2922;
+   border-color: #bc2922;
+   color: #fff;
+}
+
 .last, .long {
    grid-column: span 2;
 }
@@ -449,6 +479,20 @@ a[href^='tel'] {
       font-size: 30px;
       color: #fff;
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+   }
+
+   .lang-switcher:not(.mobile-lang-switcher) {
+      display: none;
+   }
+
+   .mobile-lang-switcher {
+      justify-content: center;
+      margin-top: 20px;
+   }
+
+   .mobile-lang-switcher .lang-btn {
+      font-size: 16px;
+      padding: 6px 16px;
    }
 
    .fa-bars::before {
