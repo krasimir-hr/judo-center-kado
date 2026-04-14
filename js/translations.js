@@ -77,14 +77,14 @@ const translations = {
       'nav.judo': 'Judo',
       'nav.kids': 'For Children',
       'nav.enthusiasts': 'For Enthusiasts',
-      'nav.competitors': 'For Competitors and Advanced',
+      'nav.competitors': 'For Competitors and Advanced Students',
       'nav.schedule': 'Schedule',
       'nav.contacts': 'Contacts',
 
       // Mobile navigation
       'mobile.about': 'About the Club',
       'mobile.kids': 'Judo for Children',
-      'mobile.enthusiasts': 'Judo for Enthusiasts',
+      'mobile.enthusiasts': 'Judo for Enthusiasts ',
       'mobile.competitors': 'Judo for Competitors',
       'mobile.schedule': 'Schedule',
       'mobile.contacts': 'Contacts',
@@ -94,27 +94,27 @@ const translations = {
       'about.p1':
          'Judo Center Kano is the first children\'s school in the city of Varna, founded in 2010 by Sensei Dehghani - a graduate of KODOKAN, Japan with over 45 years of competitive and coaching experience.',
       'about.p2':
-         'The school has a long history and extensive experience in working with children, adults and people with disabilities, and over the years has produced many champions in local and international tournaments. The club is licensed by the Ministry of Youth and Sports, and the Bulgarian Judo Federation.',
+         'The school has a long history and extensive experience working with children, adults, and people with disabilities, and over the years it has produced many champions at both local and international tournaments. The club is licensed by the Ministry of Youth and Sports and by the Bulgarian Judo Federation.',
       'about.p3':
-         'Judo Center Kano has a new facility in a modern Class A building. Classes are held in a well-equipped hall with its own air conditioning on a professional judo mat - tatami.',
+         'Judo Center Kano has a new facility in a modern Class A building. Classes are held in a well-equipped hall with its own climate control, on a professional judo mat — tatami.',
 
       // Judo for kids
       'kids.title': 'Judo for Children',
       'kids.p1':
-         'Due to its nature, Japanese philosophy and discipline, and as the only martial art without strikes, judo is not just a sport. Judo is a way of life that shapes personalities, and classes for children are becoming increasingly sought after and preferred by parents around the world.',
+         'Because of its nature, its Japanese philosophy and discipline, and as the only martial art without strikes, judo is not just a sport. Judo is a way of life that shapes character, and classes for children are becoming increasingly sought-after and preferred by parents around the world.',
       'kids.p2': 'Judo teaches discipline, respect and perseverance!',
       'kids.p3':
-         'We are proud that we have the experience and practice to train children in different age groups from the age of 5. You can see the class schedule here:',
+         'We are proud to have the hands-on experience needed to train children across various age groups from age 5 and up. You can view the class schedule here:',
 
       // Judo for enthusiasts
       'enthusiasts.title': 'Judo for Enthusiasts',
       'enthusiasts.p1':
-         'In our sport, there are no restrictions on gender and age, which makes it unique, sought after and respected by millions of people around the world. Anyone who wishes to practice judo for personal improvement and knowledge acquisition is welcome.',
+         'Our sport has no restrictions on gender or age, which is what makes it unique, popular, and respected by millions of people around the world. Anyone who wishes to practice judo for personal development and the pursuit of knowledge is warmly welcome.',
 
       // Judo for competitors
       'competitors.title': 'Judo for Competitors and Advanced',
       'competitors.p1':
-         'Judo Center Kano offers training, preparation and certification of competitors and advanced practitioners, in accordance with the rules of the International Judo Federation - IJF and programs of Kodokan, Japan.',
+         'Judo Center Kano offers training, preparation, and certification for competitors and advanced students, aligned with the rules of the International Judo Federation (IJF) and with the programs of the Kodokan in Japan.',
       'competitors.p2':
          'Anyone wishing to continue their training is welcome to visit us in person on any of the Center\'s working days.',
 
@@ -127,9 +127,9 @@ const translations = {
       'schedule.friday': 'Friday',
       'schedule.saturday': 'Saturday',
       'schedule.sunday': 'Sunday',
-      'schedule.forKids': 'For Children',
-      'schedule.forAdvanced': 'For Advanced and Enthusiasts',
-      'schedule.dayOff': 'Day Off',
+      'schedule.forKids': 'Children',
+      'schedule.forAdvanced': 'Advanced and Enthusiasts',
+      'schedule.dayOff': 'Closed / Rest day',
 
       // Contacts
       'contacts.title': 'Contacts',
